@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import Button from './button';
+import ItemsSection from './components/cardsMovies/ItemsSection'
+import TwoMovies from './components/TwoMoviesForRow/TwoMovies'
 
 import './App.css';
 
-//No funciona el onClick del boton
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         
-        <Button className="btn btn-info" onClick={()=>this.saludar()} btnName="AGREGAR A LA LISTA"/>
+
+        <ItemsSection type="list"/>
+        <TwoMovies type="two"/>
 
       </div>
     );

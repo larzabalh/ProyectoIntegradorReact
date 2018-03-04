@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Image extends Component{
 
@@ -10,7 +11,7 @@ class Image extends Component{
 			
 			<div>
 
-			<img src={this.props.src} height="100%" width="100%"/>
+			<img src={this.props.src} className="img"/>
 
 			</div>
 
@@ -19,4 +20,8 @@ class Image extends Component{
 	}
 }
 
+Image.propTypes = {
+src: PropTypes.string.isRequired,
+
+};
 export default Image;
