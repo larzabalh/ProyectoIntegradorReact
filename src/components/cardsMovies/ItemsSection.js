@@ -46,8 +46,8 @@ class itemSection extends Component{
 		return(
 				<div>
 
-				{movies.map(function(movie){
-				return  <MovieBox btnName="AGREGAR A FAVORITOS" src={movie.src} title={movie.title} descripcion={movie.descripcion} icon="far fa-heart"/>
+				{movies.map((movie,index)=>{
+				return  <MovieBox key={index} btnName="AGREGAR A FAVORITOS" src={movie.src} title={movie.title} descripcion={movie.descripcion} icon="far fa-heart"/>
 
 				})}
 				
@@ -58,7 +58,7 @@ class itemSection extends Component{
 }
 
 itemSection.propTypes = {
-src: PropTypes.string.isRequired,
+/*src: PropTypes.string.isRequired,*/
 
 };
 

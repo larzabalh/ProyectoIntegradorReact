@@ -1,24 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 
-class Image extends Component{
 
-
-
-	render(){
-
+const Image = ({src,className,alt}) => {
+	
 		return(
 			
 			<div>
 
-			<img src={this.props.src} className={this.props.className} alt={this.props.alt}/>
+			<img src={src} className={className} alt={alt}/>
 
 			</div>
 
 			
 		)
 	}
-}
 
 Image.propTypes = {
 src: PropTypes.string.isRequired,

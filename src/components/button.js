@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class Button extends Component{
-
-/*	saludar = ()=>{
-		alert('hello word')
-	}*/
-
-	render(){
+const Button =({className,onClick,icon,btnName})=>{
 
 		return(
-			<button className={this.props.className} onClick={this.props.onClick}>
-				<i className={this.props.icon}></i> { this.props.btnName }
+			<button className={className} onClick={onClick}>
+				<i className={icon}></i> { btnName }
 			</button>
 			
 		)
 	}
-}
 
 Button.propTypes = {
 className: PropTypes.string.isRequired,

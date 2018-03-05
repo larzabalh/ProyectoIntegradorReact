@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ItemsSection from './components/cardsMovies/ItemsSection'
+import ItemsSection from './components/cardsMovies/ItemsSection.js'
 import TwoMovies from './components/TwoMoviesForRow/TwoMovies'
+import MyPokemons from './components/MyPokemons/MyPokemons'
 
-import './App.css';
 
 
 class App extends Component {
@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <div className="App">
         
-
-        <ItemsSection type="list"/>
-        <TwoMovies type="two"/>
+      	<MyPokemons/>
+        {/*<ItemsSection/>
+        <TwoMovies/>*/}
 
       </div>
     );
